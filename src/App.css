@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #f6f8fa;
 }
 
 .App-logo {
@@ -8,7 +9,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('https://img.purch.com/h/1400/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzA3OS85ODgvb3JpZ2luYWwvZmFpbGVkLWNyZXctbGF1bmNoLTEuanBnPzE1MzkyOTYzMDE=');
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,6 +22,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Description {
+  font-size: medium;
+  max-width: 500px;
+  margin-top: 70px;
 }
 
 @keyframes App-logo-spin {
