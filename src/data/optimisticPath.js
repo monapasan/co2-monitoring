@@ -1,8 +1,3 @@
-// export default {
-//     2015: 10.9,
-//     2020: 11.25,
-// }
-
 export const consumptionBySource = {
     '2015': {
         Oil: 0.25,
@@ -30,19 +25,6 @@ export const consumptionBySource = {
     },
 }
 
-// export const consumptionBySource = {
-//     Oil: 0.25,
-//     'Natural Gas': 1.7,
-//     Coal: 2.6,
-//     'Biomass / Waste Solids': 0.48,
-//     Nuclear: 2.58,
-//     'Hydro-electricity': 1.73,
-//     Geothermal: 0.04,
-//     Solar: 0.38,
-//     Wind: 0.95,
-//     'Other Renewables': 0.0,
-// }
-
 // Solar (solar farms / residential solars/concentrated solar) 48/41/27
 export const kwhToCo2Coefficient = {
     Oil: 733,
@@ -55,6 +37,7 @@ export const kwhToCo2Coefficient = {
     Solar: 39,
     Wind: 12,
     'Other Renewables': 15,
+    unknown: 700,
 }
 
 // 0,25

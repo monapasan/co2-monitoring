@@ -9,6 +9,10 @@ export const linspace = (a, b, steps) => {
     return ranged.length === steps ? ranged : ranged.concat(b)
 }
 
+export const mWToKwH = value => {
+    return value / (1000 * 24)
+}
+
 export const dateFormat = 'Do MMMM YYYY'
 
 export const formatNumber = number => Number(number.toExponential(1))

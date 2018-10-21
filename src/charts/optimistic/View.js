@@ -2,6 +2,7 @@ import React from 'react'
 import {
     LineChart,
     CartesianGrid,
+    ReferenceLine,
     XAxis,
     YAxis,
     Tooltip,
@@ -26,7 +27,9 @@ const OptimisticChart = ({
     classes,
     chartData,
     minYValue,
+    realTimeData,
 }) => {
+    console.log('realTimeData', realTimeData)
     return (
         <div>
             <div>
@@ -41,7 +44,7 @@ const OptimisticChart = ({
                     name="radio-button-demo"
                     aria-label="A"
                 />
-                KwH{' '}
+                kWh{' '}
                 <Radio
                     className={classes.radio}
                     checked={selectedValue === 'KwH'}
@@ -76,6 +79,16 @@ const OptimisticChart = ({
                             }
                             unit={selectedValue}
                         />
+                    }
+                />
+                {/* <ReferenceLine y={2000} label="Max" stroke="red"/> */}
+                <ReferenceLine
+                    y={realTimeData}
+                    stroke="red"
+                    label={
+                        selectedValue === 'KwH'
+                            ? 'Electricity consumption today'
+                            : 'CO2 emission today'
                     }
                 />
                 <Legend verticalAlign="top" height={36} />
